@@ -10,7 +10,7 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors({ origin: [process.env.CLIENT_URL],methods: ["GET", "POST", "PUT", "DELETE"] ,credentials:true}));
+app.use(cors({ origin: [ "https://ai-interview-preperation-client.vercel.app" ,'http://localhost:5173','http://10.93.78.66:5173'],methods: ["GET", "POST", "PUT", "DELETE"] ,credentials:true}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
